@@ -47,3 +47,63 @@
 | split | strings.split() | `str.split()`  | 
 | trim string | strings.Trim(s, cutset string) | `str.Trim()` // remove leading and trailing spaces | 
 
+Numbers
+-------
+
+|  | Go | JS |
+| --- | --- | --- |
+| absolute value | `math.Abs(num)` | `Math.abs(num)` |
+| random number between 0 and 1 | `rand.Float64()` | `Math.random()` |
+| round to nearest integer | `math.Round(num)` | `Math.round(num)` |
+| convert string to integer | `strconv.Atoi(str)` | `parseInt(str)` |
+| convert string to float | `strconv.ParseFloat(str, 64)` | `parseFloat(str)` |
+| convert integer to string | `strconv.Itoa(num)` | `num.toString()` |
+| convert float to string | `strconv.FormatFloat(num, 'f', 2, 64)` | `num.toString()` |
+| infinity | `math.Inf(1)` | `Infinity` |
+
+Booleans
+--------
+
+|  | Go | JS |
+| --- | --- | --- |
+| boolean not | `!a` | `!a` or `a = !a` |
+| boolean and | `a && b` | `a && b` |
+| boolean or | `a || b` | `a || b` |
+
+Objects
+-------
+
+|  | Go | JS |
+| --- | --- | --- |
+| create empty object | `make(map[string]interface{})` | `{}` |
+| get value of key in object | `obj["key"]` | `obj.key` or `obj["key"]` |
+| set value of key in object | `obj["key"] = val` | `obj.key = val` or `obj["key"] = val` |
+| delete key in object | `delete(obj, "key")` | `delete obj.key` or `delete obj["key"]` |
+| check if object has key | `_, ok := obj["key"]` | `"key" in obj` or `obj.hasOwnProperty("key")` |
+
+Dates
+-----
+
+|  | Go | JS |
+| --- | --- | --- |
+| get current date and time | `time.Now()` | `new Date()` |
+| format date to string | `time.Now().Format("02-Jan-2006")` | `new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: '2-digit' })` |
+| add or subtract time to date | `time.Now().AddDate(0, 0, 1)` or `time.Now().Add(time.Hour)` | `new Date(Date.now() + 86400000)` or `new Date().setDate(new Date().getDate() + 1)` |
+
+Regular Expressions
+-------------------
+
+|  | Go | JS |
+| --- | --- | --- |
+| create regular expression object | `regexp.MustCompile("pattern")` | `/pattern/` |
+| test if string matches pattern | `regexp.MustCompile("pattern").MatchString(str)` | `/pattern/.test(str)` |
+| find first match of pattern in string | `regexp.MustCompile("pattern").FindString(str)` | `str.match(/pattern/)[0]` |
+
+Promises and Asynchronous Programming
+-------------------------------------
+
+|  | Go | JS |
+| --- | --- | --- |
+| create a promise | `funcName() (result, error)` | `new Promise((resolve, reject) => {})` |
+| resolve a promise |  |  |
+
