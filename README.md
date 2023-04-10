@@ -31,3 +31,19 @@
 | add to an array | arr = append(arr,elem) | `[0, 1, 3].push()`  | 
 | add to an array | arr = append(arr,elem) | `[0, 1, 3].push()`  | 
 | add to an array | arr = append(arr,elem) | `[0, 1, 3].push()`  | 
+
+## Strings
+|   |  Go |  JS | 
+|---|---|---|
+| char or string at an index | string(str[index]) | `str.at(index)`  | 
+| ascii value of char | int(string(str[index])) | `str.charCodeAt(index)`  | 
+| concat string | use sprintf or `strings.Join([]str, sep)` | `str.concat(index)`  | 
+| string ends with | `strings.HasSuffix("foobar", "bar")` | `str1.endsWith(str2)`  | 
+| string contains another substring | `strings.Contains(str, substr string)` | `str.includes(index)`  | 
+| index of another substring | `strings.Index(s, substr)` | `str.indexOf(anotherstr)`  | 
+| replace or replace all occurences | strings.Replace("","") | `str.replace("k","")`  | 
+| match regex | string(str[index]) | `str.search(regex)`  | 
+| substring | str[a:b] | `str.slice()`  | 
+| split | strings.split() | `str.split()`  | 
+| trim string | strings.Trim(s, cutset string) | `str.Trim()` // remove leading and trailing spaces | 
+
